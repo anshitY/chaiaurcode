@@ -1,0 +1,42 @@
+// const tinder = new Object()
+const tinder = {};
+tinder.id = "3443";
+tinder.name = "anshit";
+// console.log(tinder);
+
+const regularuser = {
+  email: "anshit#yadav",
+  fullname: {
+    userfullname: {
+      firstname: "anshit",
+      lastname: "yadav",
+    },
+  },
+};
+console.log(regularuser.fullname.userfullname);
+const obj1 = { 1: "a", 2: "b", 3: "b" };
+const obj2 = { 4: "a", 5: "b", 6: "b" };
+// const obj3 = { obj1, obj2 };
+// console.log(obj3);
+// const obj3 = Object.assign({}, obj1, obj2);
+const obj3 = { ...obj1, ...obj2 };
+const users = [
+  {
+    id: 1,
+    email: "abc@gmail.com",
+  },
+  {
+    id: 2,
+    email: "abc@gmail.com",
+  },
+  {
+    id: 3,
+    email: "abc@gmail.com",
+  },
+];
+console.log(users);
+console.log(users[1].email);
+console.log(obj3);
+console.log(Object.keys(tinder));
+console.log(Object.values(tinder));
+console.log(tinder.hasOwnProperty("id"));
